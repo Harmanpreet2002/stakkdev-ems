@@ -254,4 +254,4 @@ const PayRoll = () => {
   );
 };
 
-export default PayRoll;
+export { PayRoll };

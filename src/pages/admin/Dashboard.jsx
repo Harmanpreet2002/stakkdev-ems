@@ -4,7 +4,7 @@ import styled from "styled-components";
 import theme from "../../themes/theme";
 import EmployeeForm from "./EmployeeRegistration";
 import EmployeeList from "./EmployeeList";
-import PayRoll from "./Payroll";
+import { PayRoll } from "./PayRoll.jsx";
 import Upload from "./Upload";
 import MenuIcon from "@mui/icons-material/Menu";
 
@@ -83,7 +83,7 @@ const Dashboard = () => {
     localStorage.getItem("selectedOption") || "register"
   );
   const [showMenu, setShowMenu] = useState(false);
-  
+
   const renderContent = () => {
     switch (selectedOption) {
       case "register":
