@@ -5,11 +5,12 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
-import { AdminRoutes, EmployeeRoutes } from "./routes";
 import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
 import { store, persistor } from "./redux/store";
 import { TimerProvider } from "./context/TimerContext";
+import { AdminRoutes } from "./routes/AdminRoutes";
+import { EmployeeRoutes } from "./routes/EmployeeRoutes";
 
 function App() {
   return (

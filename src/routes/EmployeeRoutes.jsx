@@ -95,4 +95,4 @@ const EmployeeRoutes = () => {
   );
 };
 
-export default EmployeeRoutes;
+export { EmployeeRoutes };
