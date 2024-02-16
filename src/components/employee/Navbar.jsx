@@ -170,7 +170,7 @@ const Navbar = () => {
       const formData = new FormData();
       formData.append("profileImage", file);
       try {
-        const response = await fetch("http://localhost:3000/v1/image/upload", {
+        const response = await fetch("https://ems-backend-x2zr.onrender.com/v1/image/upload", {
           method: "POST",
           body: formData,
           headers: {

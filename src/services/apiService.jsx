@@ -14,7 +14,7 @@ const apiService = async (endpoint, { method, token, body }) => {
 
   try {
     const response = await fetch(
-      `http://localhost:3000/v1/${endpoint}`,
+      `https://ems-backend-x2zr.onrender.com/v1/${endpoint}`,
       requestOptions
     );
     if (response.ok) {

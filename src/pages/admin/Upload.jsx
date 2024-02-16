@@ -199,7 +199,7 @@ const Upload = () => {
 
     try {
       const response = await fetch(
-        "http://localhost:3000/v1/admin-emp/employee/holidays",
+        "https://ems-backend-x2zr.onrender.com/v1/admin-emp/employee/holidays",
         {
           method: "POST",
           body: formData,
@@ -278,7 +278,7 @@ const Upload = () => {
     if (editingHolidayId) {
       try {
         const response = await fetch(
-          `http://localhost:3000/v1/admin-emp/update_holiday/${editingHolidayId}`,
+          `https://ems-backend-x2zr.onrender.com/v1/admin-emp/update_holiday/${editingHolidayId}`,
           {
             method: "PUT",
             headers: {

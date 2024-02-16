@@ -178,7 +178,7 @@ const EditEmployee = () => {
 
   useEffect(() => {
     if (employeeId) {
-      fetch(`http://localhost:3000/v1/admin-emp/get_employee/${employeeId}`, {
+      fetch(`https://ems-backend-x2zr.onrender.com/v1/admin-emp/get_employee/${employeeId}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -257,7 +257,7 @@ const EditEmployee = () => {
                 phoneNumber: fullPhoneNumber,
               };
               fetch(
-                `http://localhost:3000/v1/admin-emp/update_employee/${employeeId}`,
+                `https://ems-backend-x2zr.onrender.com/v1/admin-emp/update_employee/${employeeId}`,
                 {
                   method: "PUT",
                   headers: {
